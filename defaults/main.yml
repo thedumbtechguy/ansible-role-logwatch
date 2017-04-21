@@ -1,0 +1,10 @@
+---
+
+logwatch_email: root@localhost
+logwatch_detail: low
+logwatch_range: yesterday
+logwatch_output: mail
+logwatch_format: text
+logwatch_daily_reports: true
+logwatch_services:
+  - All

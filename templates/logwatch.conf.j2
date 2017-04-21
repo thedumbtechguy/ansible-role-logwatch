@@ -1,0 +1,14 @@
+# {{ ansible_managed }}
+
+MailFrom = 'logwatch@{{ inventory_hostname }}'
+MailTo = {{ logwatch_email }}
+Detail = {{ logwatch_detail }}
+Range = {{ logwatch_range }}
+Output = {{ logwatch_output }}
+Format = {{ logwatch_format }}
+
+{{ '#' if logwatch_daily_reports else '' }}DailyReport = No
+
+{% for service in logwatch_services %}
+Service = {{ service }}
+{% endfor %}

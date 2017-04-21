@@ -1,0 +1,6 @@
+---
+
+- include: logwatch.yml
+  tags:
+    - logwatch
+    - logging
