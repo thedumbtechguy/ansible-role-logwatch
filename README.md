@@ -9,7 +9,7 @@ An ansible role to install and configure logwatch.
 ## Variables
 
 - `logwatch_email`: email address which Logwatch reports to
-  - Default: `root@localhost`
+  - Default: `root`
 - `logwatch_detail`: the level of detail in the Logwatch report
   - Default: `low`
 - `logwatch_range`: the default time range for the Logwatch report

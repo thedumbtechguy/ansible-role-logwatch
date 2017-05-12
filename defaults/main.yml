@@ -1,6 +1,6 @@
 ---
 
-logwatch_email: root@localhost
+logwatch_email: root
 logwatch_detail: low
 logwatch_range: yesterday
 logwatch_output: mail
